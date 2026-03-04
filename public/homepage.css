@@ -1,3 +1,4 @@
+/*BASIC*/
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
   width: 100vw;
 }
 
+/*GRID CREATION*/
 .home-grid {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -30,6 +32,7 @@ footer {
   grid-row: 3/4;
 }
 
+/*TOP NAVIGATION, ICON & IMAGE*/
 .home-nav {
   display: flex;
   justify-content: space-between;
@@ -47,13 +50,10 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
+a,
 a:visited {
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
 img {
@@ -61,19 +61,25 @@ img {
   width: 100%;
 }
 
+/*WELCOME TEXT*/
 .welcome-text {
-  display: grid;
+  margin: 100px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/*SHOPPA, ÄTA, UPPLEVA & HITTA*/
 .fourBoxes {
   display: flex;
   justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   font-size: 50px;
 }
 
@@ -83,12 +89,15 @@ h1 {
   justify-content: center;
   background-color: rgb(43, 43, 43);
   border-radius: 10px;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-align: center;
-  width: 23%;
-  height: 350px;
+  width: 24%;
+  height: 390px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 20px;
 }
 
 div > i {
@@ -99,11 +108,7 @@ div > p {
   margin: 0;
 }
 
-h2 {
-  font-size: 40px;
-  margin: 20px;
-}
-
+/*PÅ BESÖK? & ÖPPETIDER*/
 .twoBoxes {
   display: flex;
   justify-content: space-around;
@@ -115,9 +120,9 @@ h2 {
   background-color: rgb(43, 43, 43);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  width: 48%;
+  width: 50%;
   height: 350px;
-  margin: 20px;
+  margin: 20px 10px 20px 10px;
   font-size: 60px;
 }
 
@@ -135,7 +140,7 @@ h2 {
 
 .text1,
 .text2 {
-  width: 80%;
+  width: 85%;
   margin: 15px;
   line-height: 55px;
 }
@@ -146,6 +151,8 @@ h2 {
   padding: 25px;
 }
 
+/*DU ÄR CENTRUM & UPPTÄCK STATSKÄRNAN*/
+
 .centrum-text {
   display: flex;
   flex-direction: column;
@@ -154,12 +161,19 @@ h2 {
   color: white;
   background-color: rgb(43, 43, 43);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
 }
 
 .centrum-text > h1 {
   font-size: 100px;
   margin: 20px;
 }
+
+.centrum-text > h4 {
+  font-size: 70px;
+}
+
+/*FOOTER CONTENT*/
 
 footer {
   font-family: Arial, Helvetica, sans-serif;
