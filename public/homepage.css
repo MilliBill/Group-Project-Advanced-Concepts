@@ -143,6 +143,8 @@ div > p {
   width: 85%;
   margin: 15px;
   line-height: 55px;
+  color: black;
+  font-weight: bold;
 }
 
 .arrow1,
