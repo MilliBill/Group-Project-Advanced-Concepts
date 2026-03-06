@@ -1,5 +1,4 @@
 span {
-  /* this is the letter finder on the right of the webpage */
   right: 0;
   top: 80px;
   right: 20px;
@@ -19,15 +18,13 @@ a:hover {
 }
 
 #categories {
-  /* contains the 3 columns of letters */
   display: grid;
   grid-template-areas: "col1 col2 col3";
 }
 
-/*Letters in the box*/
 .collapsible {
-  display: flex;
-  flex-direction: row;
+  display: block;
+  width: auto;
   margin-top: 35px;
   margin-left: 95px;
   margin-right: 95px;
@@ -37,8 +34,9 @@ a:hover {
   font-weight: 750;
   background-color: #ca9992;
   border: none;
+  cursor: pointer;
+  text-align: left;
 }
-
 #column1 {
   grid-area: col1;
   display: flex;
@@ -57,7 +55,19 @@ a:hover {
   flex-flow: column;
 }
 
-/* includes all divs that are right after the letter boxes */
+/* Smooth transition logic 
+  Reference: https://www.w3schools.com/howto/howto_js_accordion.asp 
+*/
 .stores {
-  display: none;
+  margin-left: 95px;
+  margin-right: 95px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+}
+
+.stores p {
+  margin: 0;
+  padding: 10px 15px;
 }

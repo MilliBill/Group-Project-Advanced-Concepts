@@ -2,9 +2,12 @@
 fetch("/api/venues")
   .then((res) => res.json())
   .then((data) => {
-    // Sorting stores alphabetically
+    /*  ensures Swedish characters (ÅÄÖ) are sorted correctly.
+  Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare
+*/
     const sortedData = data.sort((a, b) => a.name.localeCompare(b.name, "sv"));
 
+    //sorting
     sortedData.forEach((store) => {
       const firstLetter = store.name.charAt(0).toUpperCase();
       const container = document.querySelector(
@@ -31,23 +34,21 @@ fetch("/api/venues")
         container.appendChild(p);
       }
     });
-
-    // Creating the click funtions after finding data
     setupCollapsibles();
   })
   .catch((err) => console.error("Error loading venues:", err));
 
-// Click function to open and close
+//dropdown stores
 function setupCollapsibles() {
   let coll = document.getElementsByClassName("collapsible");
+
   for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
       let stores = this.nextElementSibling;
-      // Vi kollar display. Om den är "block" döljer vi, annars visar vi
-      if (stores.style.display === "block") {
-        stores.style.display = "none";
+
+      if (stores.style.maxHeight) {
       } else {
-        stores.style.display = "block";
+        stores.style.maxHeight = stores.scrollHeight + "px";
       }
     });
   }
