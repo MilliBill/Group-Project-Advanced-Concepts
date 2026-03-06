@@ -27,32 +27,32 @@ a:hover {
 /*Letters in the box*/
 .collapsible {
   display: flex;
-   flex-direction: row;
-   margin-top: 35px;
-   margin-left: 95px;
-   margin-right: 95px;
-   padding: 15px;
+  flex-direction: row;
+  margin-top: 35px;
+  margin-left: 95px;
+  margin-right: 95px;
+  padding: 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: 750;
-   background-color: #ca9992;
+  background-color: #ca9992;
   border: none;
 }
 
 #column1 {
-  grid-area: "col1";
+  grid-area: col1;
   display: flex;
   flex-flow: column;
 }
 
 #column2 {
-  grid-area: "col2";
+  grid-area: col2;
   display: flex;
   flex-flow: column;
 }
 
 #column3 {
-  grid-area: "col3";
+  grid-area: col3;
   display: flex;
   flex-flow: column;
 }
