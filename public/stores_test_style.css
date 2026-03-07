@@ -1,27 +1,77 @@
+body {
+  background-color: #ffffff;
+  background-image: url(district.jpg);
+  background-size: 1550px;
+  background-repeat: no-repeat;
+  margin: 0px;
+  
+}
+
+/*list of letters on the right*/
 span {
   right: 0;
-  top: 80px;
+  top: 130px;
   right: 20px;
   position: fixed;
   display: flex;
   flex-flow: column nowrap;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
+/*logo style*/
+ul {
+  list-style-type: none;
+  position: sticky;
+  font-size: 35px;  
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*background of logo*/
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 30%;
+}
+
+.home-link {
+  top: 100px;
+  color: #ffffff;
+}
+
+/*places style*/
+ .places{
+  margin-top: 800px;
+  padding-left: 70px;
+color: #ffffff;
+background-color: black;
+  font-size: 35px;  
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*style of the list on the right*/
 a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 a:hover {
   color: #ca9992;
 }
 
+
+
+/*columns for categories*/
 #categories {
   display: grid;
   grid-template-areas: "col1 col2 col3";
 }
 
+/*style of each column*/
 .collapsible {
   display: block;
   width: auto;
@@ -37,6 +87,11 @@ a:hover {
   cursor: pointer;
   text-align: left;
 }
+
+.collapsible:hover {
+background-color: #997989;
+}
+
 #column1 {
   grid-area: col1;
   display: flex;
