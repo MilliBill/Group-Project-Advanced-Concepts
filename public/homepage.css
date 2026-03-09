@@ -57,6 +57,10 @@ a:visited {
   color: white;
 }
 
+#hamburger:hover {
+  cursor: pointer;
+}
+
 img {
   object-fit: cover;
   width: 100%;

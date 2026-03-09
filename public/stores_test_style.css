@@ -43,6 +43,10 @@ img {
   color: white;
 }
 
+#hamburger:hover {
+  cursor: pointer;
+}
+
 /*list of letters on the right*/
 span {
   grid-area: letters;
