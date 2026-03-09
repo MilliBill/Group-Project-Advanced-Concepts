@@ -17,6 +17,7 @@ fetch("/api/venues")
       if (container) {
         const p = document.createElement("p");
         p.style.padding = "5px 20px";
+        p.style.fontFamily = "Arial, Helvetica, sans-serif";
 
         // Creating the link for the stores
         if (store.url) {
