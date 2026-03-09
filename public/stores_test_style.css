@@ -38,6 +38,36 @@ img {
   width: 100%;
 }
 
+.image-container {
+  position: relative;
+  display: inline;
+}
+
+.word-overlay {
+  position: absolute;
+  color: white;
+  z-index: 10;
+}
+
+h2 {
+  bottom: 350px;
+  left: 100px; 
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+}
+
+.text-overlay {
+position: absolute;
+ bottom: 300px;
+left: 100px;
+font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: white;
+  z-index: 10;
+}
+
 #logo-text,
 #logo-text > a {
   color: white;
@@ -145,6 +175,11 @@ a:hover {
 }
 
 /*FOOTER CONTENT*/
+
+#above-footer {
+width: 100%;
+  margin-top: 50px;
+}
 
 footer {
   font-family: Arial, Helvetica, sans-serif;
