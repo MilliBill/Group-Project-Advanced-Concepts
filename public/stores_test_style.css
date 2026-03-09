@@ -1,6 +1,5 @@
 body {
   background-color: #ffffff;
-  background-image: url(district.jpg);
   background-size: 1550px;
   background-repeat: no-repeat;
   margin: 0px;
@@ -10,6 +9,38 @@ body {
   display: grid;
   grid-template-areas: "categories letters";
   grid-template-columns: 25fr 1fr;
+}
+
+/*home nav*/
+header {
+  background-color: rgb(0, 0, 0);
+}
+
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: 30%;
+  padding: 15px 30px 15px 30px;
+}
+
+ul {
+  list-style-type: none;
+  position: sticky;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#logo-text,
+#logo-text > a {
+  color: white;
 }
 
 /*list of letters on the right*/
@@ -25,40 +56,11 @@ span {
   font-size: 16px;
 }
 
-#placeholder {
-  height: 50vh;
-}
-
-/*logo style*/
-ul {
-  list-style-type: none;
-  position: sticky;
-  font-size: 35px;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*background of logo*/
-.home-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  margin: 0px;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 30%;
-}
-
-.home-link {
-  top: 100px;
-  color: #ffffff;
-}
-
 /*places style*/
 .places {
-  margin-top: 800px;
-  padding-left: 70px;
+  text-align: center;
   color: #ffffff;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   font-size: 35px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -134,4 +136,21 @@ a:hover {
 .stores p {
   margin: 0;
   padding: 10px 15px;
+}
+
+/*FOOTER CONTENT*/
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+footer > h3 {
+  font-size: 30px;
+}
+
+footer > i {
+  font-size: 40px;
 }

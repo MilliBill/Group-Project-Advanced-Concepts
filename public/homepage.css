@@ -36,10 +36,10 @@ footer {
 .home-nav {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0);
   height: 30%;
+  padding: 15px 30px 15px 30px;
 }
 
 ul {
@@ -48,6 +48,7 @@ ul {
   font-size: 35px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 a,
