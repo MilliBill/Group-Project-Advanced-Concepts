@@ -47,6 +47,7 @@ function setupCollapsibles() {
       let stores = this.nextElementSibling;
 
       if (stores.style.maxHeight) {
+        stores.style.maxHeight = null;
       } else {
         stores.style.maxHeight = stores.scrollHeight + "px";
       }
