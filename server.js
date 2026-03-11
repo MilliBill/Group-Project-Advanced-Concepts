@@ -3,8 +3,6 @@ const fs = require("fs");
 const app = express();
 const PORT = 3000;
 
-app.use(express.json());
-
 app.use("/", express.static("public"));
 
 app.get("/api/venues", (req, res) => {
@@ -12,8 +10,9 @@ app.get("/api/venues", (req, res) => {
     if (err) {
       console.error("Could not read stores.json:", err);
       return res.status(500).json({ error: "Internal Server Error" });
+    } else {
+      res.json(JSON.parse(data));
     }
-    res.json(JSON.parse(data));
   });
 });
 

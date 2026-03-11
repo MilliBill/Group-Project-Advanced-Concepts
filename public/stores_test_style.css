@@ -26,7 +26,6 @@ header {
 
 ul {
   list-style-type: none;
-  position: sticky;
   font-size: 35px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -51,17 +50,17 @@ img {
 
 h2 {
   bottom: 350px;
-  left: 100px; 
+  left: 100px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100px;
 }
 
 .text-overlay {
-position: absolute;
- bottom: 300px;
-left: 100px;
-font-weight: 100;
+  position: absolute;
+  bottom: 300px;
+  left: 100px;
+  font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   color: white;
@@ -177,7 +176,7 @@ a:hover {
 /*FOOTER CONTENT*/
 
 #above-footer {
-width: 100%;
+  width: 100%;
   margin-top: 50px;
 }
 
